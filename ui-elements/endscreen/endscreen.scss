@@ -52,10 +52,6 @@
 	line-height: 36px;
 }
 
-.message-text { /* .section */
-	/* color:#666 size:14px (lauout.css) */
-}
-
 .message-text strong {
 	color: #333;
 	font-weight: bold;
@@ -65,15 +61,6 @@
 .endscreen .message-text { /* .section */
 	color: #333;
 	font-weight: bold;
-}
-
-.message-alert {
-	padding: 10px;
-	color: #B60;
-	border: 1px solid #D71;
-	background: #FFECDA;
-	width: auto;
-	
 }
             
 .animated-result {
@@ -91,7 +78,6 @@
 .result-bar {
 }
 
-
 .bar-container { /* Platzhalter für Betty*/
 	height: 18px;
 	background: #FFF;
@@ -103,7 +89,7 @@
 .result-value {
 	width: 80%;
 	height: 18px;
-	background: #0090CC;
+	background: $c-blue-600;
 }
 
 
@@ -190,38 +176,4 @@
             
 .button-row {
 	text-align: center;
-}
-
-.dialog form input[type=text] {
-	font-family: dejavu-font, "Lucida Grande", "Lucida Sans Unicode", Helvetic, Arial, sans-serif;
-	letter-spacing: 0.1em;
-	color: #333;
-	width: auto;
-	font-size: 24px;
-	min-height: 35px;
-	margin: 0 auto;
-	padding: 5px 2%;
-	width: 96%;
-}
-
-/* unwichtig für Endscreen */
-
-.bf-times-thin {
-	position: absolute;
-	top: 10px;
-	right: 12px;
-	color: #AAA;
-	font-size: 20px;
-}
-
-.bf-times-thin:hover {
-	color: #BBB;
-	cursor: pointer;
-}
-
-.browser-icons .browser-icon {
-	display: inline-block;
-	margin: 0 2%;
-	width: 20%;
-	font-size: 12px;
 }
