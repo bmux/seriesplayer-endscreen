@@ -1,3 +1,12 @@
+
+.note {
+	border: $border-width-s solid $c-yellow-600;
+	color: $c-yellow-700;
+	background: $c-yellow-100;
+  padding: 10px;
+  margin: 4px 20px;
+}
+
 .template-title {
   text-align: center;
   color: $c-gray-800;
@@ -25,10 +34,3 @@ body {
 	max-width: 320px;
 }
 
-.note {
-	border: $border-width-s solid $c-yellow-600;
-	color: $c-yellow-700;
-	background: $c-yellow-100;
-  padding: 10px;
-  margin: 4px 20px;
-}
