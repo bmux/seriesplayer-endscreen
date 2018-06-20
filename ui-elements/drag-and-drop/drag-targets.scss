@@ -1,0 +1,40 @@
+.drag-target {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $c-white;
+  background-color: $c-white;
+  padding: 2px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.drag-target-item-type-0 {
+  border-color: $c-gray-500;
+  background-color: $c-white;
+  &.drag-target-over {
+    border-color: $c-gray-400;
+    background-color: $c-white;
+  }
+}
+
+.drag-target-item-type-1 {
+  border-color: $c-steel-blue-600;
+  background-color: $c-steel-blue-300;
+  &.drag-target-over {
+    border-color: $c-steel-blue-500;
+    background-color: $c-steel-blue-200;
+  }
+}
+
+.drag-target-item-type-2 {
+  border-color: $c-orange-600;
+  background-color: $c-orange-300;
+  &.drag-target-over {
+    border-color: $c-orange-500;
+    background-color: $c-orange-500;
+  }
+}
