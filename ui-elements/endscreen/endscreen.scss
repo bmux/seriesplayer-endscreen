@@ -1,0 +1,245 @@
+/* Bitte Grundlegende Schriftformate aus layout.css für html und body beachten */
+
+.modal {
+	margin: 20px auto 80px; /* ignorieren */
+	text-align: center;
+	background: #FFF;
+	padding: 19px 38px 9px;
+	border: 1px solid #ccc;
+	width: 518px;
+	position: relative;
+}
+
+.modal-inner {
+	position: relative;
+}
+
+.modal.no-connection {
+	width: 318px;
+}
+
+.modal.text-left {
+	text-align: left;
+}
+
+.modal.endscreen {
+	width: 594px /* 600px - 2 x 3px Innenabstand*/;
+	padding: 3px; /* border: 3px solid #333; alternativ statt Hintergrund und Padding*/
+	border: none;
+	text-align: left;
+}
+
+.modal.endscreen .modal-inner {
+	background-image: url(../pics/Background.svg);
+	background-repeat: repeat-x;
+	background-color: #EEF6FF;
+	border: 1px solid #B2D2DD;
+	padding: 15px 34px 5px; /* links/rechts: 40px - 2 x 3px für endscreen-outer - 1px border; oben/unten: - 20px für .segment margin*/
+}
+
+.section {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	/* background: rgba(0,0,0,0.1); */
+}
+        
+.star { /* .section */
+	float: right;
+	position: relative;
+	margin-top: 20px;
+	left: 10px;
+	top: -20px;
+}
+
+.headline { /* .section */
+	color: #333;
+	font-size:24px;
+	line-height: 30px;
+	font-weight: 100;/* DejaVu-light*/
+	margin-top: 10px;
+}
+
+.endscreen .headline { /* .section */
+	color: #07B;
+	font-weight: 400;/* DejaVu-Condensed (normal)*/
+}
+
+.headline span { /* counts */
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.message-text { /* .section */
+	/* color:#666 size:14px (lauout.css) */
+}
+
+.message-text strong {
+	color: #333;
+	font-weight: bold;
+}
+
+
+.endscreen .message-text { /* .section */
+	color: #333;
+	font-weight: bold;
+}
+
+.message-alert {
+	padding: 10px;
+	color: #B60;
+	border: 1px solid #D71;
+	background: #FFECDA;
+	width: auto;
+	
+}
+            
+.animated-result {
+	padding: 7px 0;
+}
+
+.betty-endscreen {
+	height: 150px;
+	background-image: url(../pics/Betty.svg);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	width: 50%
+}
+
+.result-bar {
+}
+
+
+.bar-container { /* Platzhalter für Betty*/
+	height: 18px;
+	background: #FFF;
+	border: 1px solid #CCC;
+	padding: 1px;
+	position: relative;
+}
+
+.result-value {
+	width: 80%;
+	height: 18px;
+	background: #0090CC;
+}
+
+
+.coin {
+	position: absolute;
+	top: -7px;
+	margin-left: -17px;
+}
+
+.coin-1 {
+	left: 60%;
+}
+
+.coin-2 {
+	left: 75%;
+}
+
+.coin-3 {
+	left: 90%;
+}
+
+.task-states {
+	max-height: 200px;
+	overflow-x: hide;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+}
+
+.task-table {
+	background: #FFF;
+	border-collapse: collapse;
+}
+
+.task-table tr {
+	border-bottom: 1px solid #E0E0E0;
+}
+
+.task-table tr:last-child {
+	border-bottom: none;
+}
+
+.task-table td {
+	border-right: 1px solid #E0E0E0;
+	vertical-align: center;
+	height: 34px;
+	padding: 5px 10px;
+	cursor: pointer;
+	font-size: 13px;
+	width: 25%;
+}
+
+.task-table td:hover {
+	background: #EEE;
+}
+
+.task-table td.empty:hover {
+	background: transparent;
+	cursor: auto;
+}
+
+.task-table td:last-child {
+	border-right: none;
+}
+
+.task-open,
+.task-done {
+	/* Breite: 12px */
+	margin-right: 8px;
+	position: relative;
+	top: 1px;
+}
+
+.task-right {
+	/* Breite: 13px */
+	margin-right: 7px;
+}
+
+.task-wrong {
+	/* Breite: 10px */
+	margin-right: 10px;
+	margin-left: 1px;
+}
+
+            
+.button-row {
+	text-align: center;
+}
+
+.modal form input[type=text] {
+	font-family: dejavu-font, "Lucida Grande", "Lucida Sans Unicode", Helvetic, Arial, sans-serif;
+	letter-spacing: 0.1em;
+	color: #333;
+	width: auto;
+	font-size: 24px;
+	min-height: 35px;
+	margin: 0 auto;
+	padding: 5px 2%;
+	width: 96%;
+}
+
+/* unwichtig für Endscreen */
+
+.bf-times-thin {
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	color: #AAA;
+	font-size: 20px;
+}
+
+.bf-times-thin:hover {
+	color: #BBB;
+	cursor: pointer;
+}
+
+.browser-icons .browser-icon {
+	display: inline-block;
+	margin: 0 2%;
+	width: 20%;
+	font-size: 12px;
+}
