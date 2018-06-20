@@ -1,3 +1,5 @@
+@import 'responsive';
+
 //Paddings and Margins
 $space-xxs: 4px;
 $space-xs: 8px;
@@ -49,9 +51,9 @@ $section-width-m: 320px;
 $section-width-l: 480px;
 $section-width-xl: 640px;
 
-$section-height-xxs: 44px;
-$section-height-xs: 64px;
-$section-height-s: 96px;
+$section-height-s: 44px;
+$section-height-m: 50px;
+$section-height-l: 96px;
 
 //Universal
 $min-clickable-height: 44px;
@@ -76,3 +78,24 @@ $btn-svg-l: $space-xl;
 //Input field
 $input-min-width: 20px;
 $input-min-height: 32px;
+
+//General spacings of content inside an exercise
+$exercise-horizontal-content-spacing-s: $space-s;
+$exercise-horizontal-content-spacing-m: $space-m;
+
+$exercise-vertical-content-spacing-xs: $space-xs;
+$exercise-vertical-content-spacing-s: $space-s;
+$exercise-vertical-content-spacing-m: $space-m;
+
+
+@mixin exercise-vertical-content-spacing {
+  @media ($small-screen) {
+    margin-top: $exercise-vertical-content-spacing-s * 0.5;
+    margin-bottom: $exercise-vertical-content-spacing-s * 0.5;
+  }
+
+  @media ($large-screen) {
+    margin-top: $exercise-vertical-content-spacing-m * 0.5;
+    margin-bottom: $exercise-vertical-content-spacing-m * 0.5;
+  }
+}

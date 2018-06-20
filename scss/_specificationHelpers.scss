@@ -8,3 +8,27 @@ body {
   background-color: $c-gray-500;
   padding-top: 80px;
 }
+
+.tablet-dialog-dummy,
+.phone-dialog-dummy {
+	margin: 20px auto 80px; /* ignore */
+	background: #FFF;
+	border: 1px solid $c-area-border;
+  overflow-y: auto;
+}
+
+.tablet-dialog-dummy {
+	max-width: 600px;
+}
+
+.phone-dialog-dummy {
+	max-width: 320px;
+}
+
+.note {
+	border: $border-width-s solid $c-yellow-600;
+	color: $c-yellow-700;
+	background: $c-yellow-100;
+  padding: 10px;
+  margin: 4px 20px;
+}
