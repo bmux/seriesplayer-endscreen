@@ -26,8 +26,17 @@ body {
   overflow-y: auto;
 }
 
-.tablet-dialog-dummy {
+.phone-dialog-dummy {
 	max-width: 600px;
+  .button-row {
+    .btnWrapper {
+        width: 100%;
+        margin-bottom: 12px;
+      .btn {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .phone-dialog-dummy {

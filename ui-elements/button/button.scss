@@ -96,7 +96,7 @@ $btn-transparency-active: rgba(0, 0, 0, 0.1);
     margin: 0; // stop reserving space via margins
     &::before {
       content: "";
-      outline: 1px dashed rgba(0, 0, 255, 0.5); //DELETE ME
+      //outline: 1px dashed rgba(0, 0, 255, 0.5); //DELETE ME
       position: absolute;
       left: 0;
       right: 0;
@@ -109,7 +109,7 @@ $btn-transparency-active: rgba(0, 0, 0, 0.1);
   }
 
   &.reservespace {
-    outline: 1px dashed rgba(0, 255, 0, 0.5); //DELETE ME
+    //outline: 1px dashed rgba(0, 255, 0, 0.5); //DELETE ME
   }
 
   &-action {
