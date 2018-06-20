@@ -1,39 +1,21 @@
 /* Bitte Grundlegende Schriftformate aus layout.css für html und body beachten */
 
-.modal {
+.dialog-dummy {
 	margin: 20px auto 80px; /* ignorieren */
-	text-align: center;
 	background: #FFF;
-	padding: 19px 38px 9px;
-	border: 1px solid #ccc;
-	width: 518px;
+	border: 1px solid $c-area-border;
+	max-width: 600px;
+}
+
+.endscreen {
 	position: relative;
 }
 
-.modal-inner {
-	position: relative;
-}
-
-.modal.no-connection {
-	width: 318px;
-}
-
-.modal.text-left {
+.endscreen {
 	text-align: left;
-}
-
-.modal.endscreen {
-	width: 594px /* 600px - 2 x 3px Innenabstand*/;
-	padding: 3px; /* border: 3px solid #333; alternativ statt Hintergrund und Padding*/
-	border: none;
-	text-align: left;
-}
-
-.modal.endscreen .modal-inner {
-	background-image: url(../pics/Background.svg);
+	background-image: url(../img/Background.svg);
 	background-repeat: repeat-x;
-	background-color: #EEF6FF;
-	border: 1px solid #B2D2DD;
+	background-color: $c-blue-100;
 	padding: 15px 34px 5px; /* links/rechts: 40px - 2 x 3px für endscreen-outer - 1px border; oben/unten: - 20px für .segment margin*/
 }
 
@@ -100,7 +82,7 @@
 
 .betty-endscreen {
 	height: 150px;
-	background-image: url(../pics/Betty.svg);
+	background-image: url(../img/Betty.svg);
 	background-position: bottom center;
 	background-repeat: no-repeat;
 	width: 50%
@@ -210,7 +192,7 @@
 	text-align: center;
 }
 
-.modal form input[type=text] {
+.dialog form input[type=text] {
 	font-family: dejavu-font, "Lucida Grande", "Lucida Sans Unicode", Helvetic, Arial, sans-serif;
 	letter-spacing: 0.1em;
 	color: #333;
