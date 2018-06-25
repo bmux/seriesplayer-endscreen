@@ -4,7 +4,7 @@
 	color: $c-yellow-700;
 	background: $c-yellow-100;
   padding: 10px;
-  margin: 4px 20px;
+  margin: 4px auto;
   max-width: 600px;
 }
 
@@ -29,7 +29,12 @@ body {
 }
 
 .phone-dialog-dummy {
-	max-width: 600px;
+	width: 320px;
+  height: 480px;
+  .endscreen {
+    height: 100%;
+    box-sizing: border-box;
+  }
   .button-row {
     .btnWrapper {
         width: 100%;
@@ -39,9 +44,5 @@ body {
       }
     }
   }
-}
-
-.phone-dialog-dummy {
-	max-width: 320px;
 }
 
