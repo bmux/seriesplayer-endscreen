@@ -101,6 +101,7 @@ $task-state-icon-offset: 1px;
 		overflow-y: auto;
 		border: $border-width-s solid $c-group-border;
 		box-sizing: border-box; /* makes inner table respect the width of the layout */
+		max-height: ($min-clickable-height * 5) - ($min-clickable-height/2); /* just for shwocase */
 	}
 
 	.task-table {
@@ -120,7 +121,7 @@ $task-state-icon-offset: 1px;
 	.task-table td {
 		border-right: $border-width-s solid $c-element-border;
 		vertical-align: middle;
-		height: $min-clickable-height - $space-xxs;
+		height: $min-clickable-height;
 		padding: $space-xxs $space-xs;
 		cursor: pointer;
 		font-size: $font-size-s;
