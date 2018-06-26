@@ -12,6 +12,10 @@ $task-state-icon-offset: 1px;
 	padding: $exercise-vertical-content-spacing-m $space-xxl $space-xxs;
 }
 
+.phone-dialog-dummy .endscreen {
+	padding: $exercise-vertical-content-spacing-m $exercise-vertical-content-spacing-m $space-xxs;
+}
+
 .endscreen {
 	.section {
 		margin-top: $space-l;
