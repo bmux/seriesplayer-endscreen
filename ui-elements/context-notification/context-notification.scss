@@ -1,7 +1,13 @@
 .context-notification {
-	padding: 10px;
+	padding: $space-xs $space-xs;
 	width: auto;
 	display: inline-block;
+	font-size: $font-size-m;
+	line-height: $line-height-m;
+}
+
+.context-notification {
+	//margin-bottom: $space-s;
 }
 
 .context-notification-full-width {
